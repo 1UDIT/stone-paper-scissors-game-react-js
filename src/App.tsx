@@ -7,7 +7,7 @@ function App() {
   const [computerScore, setComputerScores] = useState(0)
   const [playerScore, setplayerscores] = useState(0);
   const [TieScores, setTieScores] = useState(0);
-  const [result, setresult] = useState('');
+  const [result, setresult] = useState('Result...');
 
   const game = (value: string) => {
     console.log("click", value);
