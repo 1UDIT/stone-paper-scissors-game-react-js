@@ -102,6 +102,7 @@
  @media screen and (max-width: 612px) {
    .title {
      text-align: center;
+     font-size: 2.5rem;
    }
 
    .score {

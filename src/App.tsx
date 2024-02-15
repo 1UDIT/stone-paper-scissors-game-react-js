@@ -9,21 +9,19 @@ function App() {
   const [TieScores, setTieScores] = useState(0);
   const [result, setresult] = useState('Result...');
 
-  const game = (value: string) => {
-    console.log("click", value);
+  const game = (value: string) => { 
     const computerOptions = ['rock', 'paper', 'scissors'];
     if (moves > 0) {
       setMoves(move => move - 1);
 
-      const choiceNumber = Math.floor(Math.random() * 3);
+      const choiceNumber = Math.floor(Math.random() * 3);       
       const computerChoice = computerOptions[choiceNumber];
       setcomputerMoves(computerChoice);
       Winner(computerChoice, value);
     }
   }
 
-  const Winner = (computerChoice: string, playerChoice: string) => {
-    console.log(computerChoice, "computer");
+  const Winner = (computerChoice: string, playerChoice: string) => { 
     if (playerChoice === computerChoice) {
       setresult("Tie");
       setTieScores(TieScores + 1);
